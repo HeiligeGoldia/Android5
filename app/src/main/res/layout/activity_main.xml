@@ -13,7 +13,7 @@
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.0">
@@ -23,15 +23,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="93dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#FFEB3B"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FFC107"
         android:text="Dount"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
         android:id="@+id/textView3"
@@ -79,34 +80,45 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="47dp"
-        android:layout_height="37dp"
-        app:srcCompat="@drawable/group_18"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="93dp" />
+        android:layout_width="45dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/group_18" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="107dp"
-        android:layout_height="38dp"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
         android:backgroundTint="#C7C7C7"
         android:text="Pink Dount"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="136dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="88dp"
         android:layout_height="40dp"
+        android:layout_marginStart="20dp"
         android:backgroundTint="#C7C7C7"
         android:text="Floating"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
